@@ -1,74 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".MainActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    android:layout_gravity="center_horizontal"
+    tools:context=".MainActivity">
 
-        <EditText
-            android:id="@+id/ed_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/name"
-            android:inputType="textPersonName"
-            android:autofillHints="" />
+    <EditText
+        android:id="@+id/edtemployeename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnupdate"
+        android:layout_alignRight="@+id/btnupdate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:autofillHints=""
+        android:hint="@string/search"
+        android:inputType="text" />
 
-        <EditText
-            android:id="@+id/ed_age"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/age"
-            android:inputType="textPersonName"
-            android:autofillHints="" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtemployeename"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:autofillHints=""
+        android:hint="@string/employee_name"
+        android:inputType="text" />
 
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:hint="@string/employee_mailid"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:autofillHints=""
+        android:hint="@string/employee_salary"
+        android:inputType="numberDecimal" />
 
-            <RadioButton
-                android:id="@+id/radio_pirates"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:text="@string/male" />
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/save" />
 
-            <RadioButton
-                android:id="@+id/radio_ninjas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:text="@string/female" />
-        </RadioGroup>
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnsave"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/update" />
 
-        <CheckBox
-            android:id="@+id/checkbox_meat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onCheckboxClicked"
-            android:text="@string/coffee" />
+    <Button
+        android:id="@+id/btndel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/delete" />
 
-        <CheckBox
-            android:id="@+id/checkbox_cheese"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onCheckboxClicked"
-            android:text="@string/reading_newspaper" />
+    <Button
+        android:id="@+id/btnselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btndel"
+        android:layout_alignLeft="@+id/btndel"
+        android:layout_alignTop="@+id/btnselectperticular"
+        android:text="@string/search_all_record" />
 
+    <Button
+        android:id="@+id/btnselectperticular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsave"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="53dp"
+        android:text="@string/search" />
 
-        <ToggleButton
-            android:id="@+id/togglebutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/married"
-            android:textOff="@string/single"
-            android:textOn="@string/married" />
-</LinearLayout>
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnselect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        app:srcCompat="@android:drawable/ic_lock_idle_low_battery" />
 
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:checked="true"
+        android:switchMinWidth="56dp"
+        android:text="Switch1:"
+        android:textOff="OFF"
+        android:textOn="ON"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
+    <ToggleButton
+        android:id="@+id/togglebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText3"
+        android:layout_marginTop="30sp"
+        android:text="ToggleButton" />
+</RelativeLayout>

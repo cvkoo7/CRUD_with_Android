@@ -1,10 +1,10 @@
 # Android_practice
 
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/cvkoo7/login_form_android)
-![GitHub](https://img.shields.io/github/license/cvkoo7/login_form_android)
-![GitHub top language](https://img.shields.io/github/languages/top/cvkoo7/login_form_android)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/cvkoo7/CRUD_with_Android)
+![GitHub](https://img.shields.io/github/license/cvkoo7/CRUD_with_Android)
+![GitHub top language](https://img.shields.io/github/languages/top/cvkoo7/CRUD_with_Android)
 
-#### It is the app which implements basic buttons and displays toast message when clicked.
+#### It is the app which implements CRUD operations with SQlite database and also it has feature of changing theme dynamically and SplashScreen.
 
 *minSdkVersion 16* \
 *targetSdkVersion 30* \

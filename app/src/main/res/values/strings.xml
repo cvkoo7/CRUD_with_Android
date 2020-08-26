@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Practical 7</string>
+    <string name="app_name">CRUD APP</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="coffee">coffee</string>
@@ -8,4 +8,12 @@
     <string name="single">Single</string>
     <string name="name">Name</string>
     <string name="age">Age</string>
+    <string name="employee_mailid">Employee Mail Id</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="search_all_record">Search All Record</string>
+    <string name="search">Search</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="employee_salary">Employee Salary</string>
 </resources>
