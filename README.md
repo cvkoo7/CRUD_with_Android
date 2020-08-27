@@ -15,7 +15,7 @@
 
 
 <p float="center">
-  <img src="/Screenshots/pp.png" height="412" width="220" />
+  <img src="/Screenshots/app.png" height="412" width="220" />
 </p>
 
 
