@@ -169,10 +169,10 @@ public class MainActivity extends AppCompatActivity implements android.view.View
             StringBuffer buffer=new StringBuffer();
             while(c.moveToNext())
             {
-
+                rerturnList.add("Employee Id: "+c.getInt(0)+"\n");
                 rerturnList.add("Employee Name: "+c.getString(1)+"\n");
                 rerturnList.add("Employee Mail: "+c.getString(2)+"\n");
-                rerturnList.add("Employee Salary: "+c.getString(3)+"\n");
+                rerturnList.add("Employee Salary: "+c.getString(3)+"\n\n");
             }
             Intent intent = new Intent(getApplicationContext(), view.class);
 
