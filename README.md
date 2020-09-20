@@ -23,6 +23,6 @@
 ## SUPPORT THE WORK
 
 [![GitHub followers](https://img.shields.io/github/followers/cvkoo7?label=follow&style=social)](https://github.com/cvkoo7?tab=followers)
-[![GitHub forks](https://img.shields.io/github/forks/cvkoo7/Spark?label=forks&style=social)](https://github.com/cvkoo7/Spark/network) &nbsp;
-[![GitHub stars](https://img.shields.io/github/stars/cvkoo7/Spark?style=social)](https://github.com/cvkoo7/Spark/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/cvkoo7/CRUD_with_Android?label=forks&style=social)](https://github.com/cvkoo7/Spark/network) &nbsp;
+[![GitHub stars](https://img.shields.io/github/stars/cvkoo7/CRUD_with_Android?style=social)](https://github.com/cvkoo7/Spark/stargazers)
 &nbsp;
